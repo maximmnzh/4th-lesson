@@ -10,11 +10,13 @@ public class Main
     static Integer sumDigits(Integer number) {
         String s = number.toString();
         int sum = 0;
+
         for(int i = 0; i < s.length() ; i++){
             if( Character.isDigit(s.charAt(i)) ){
-                sum = sum + Character.getNumericValue(s.charAt(i));
+                sum += Character.getNumericValue(s.charAt(i));
             }
         }
+
         return sum;
 
 //        Without using toString and charAt methods.
